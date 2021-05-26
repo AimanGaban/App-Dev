@@ -1,0 +1,10 @@
+C:\Users\Faieqah\OneDrive\Desktop\RegistrationForm\RegistrationForm\bin\Debug\RegistrationForm.exe.config
+C:\Users\Faieqah\OneDrive\Desktop\RegistrationForm\RegistrationForm\bin\Debug\RegistrationForm.exe
+C:\Users\Faieqah\OneDrive\Desktop\RegistrationForm\RegistrationForm\bin\Debug\RegistrationForm.pdb
+C:\Users\Faieqah\OneDrive\Desktop\RegistrationForm\RegistrationForm\obj\Debug\PatientRegistration.csproj.AssemblyReference.cache
+C:\Users\Faieqah\OneDrive\Desktop\RegistrationForm\RegistrationForm\obj\Debug\RegistrationForm.PatientRegistration.resources
+C:\Users\Faieqah\OneDrive\Desktop\RegistrationForm\RegistrationForm\obj\Debug\RegistrationForm.Properties.Resources.resources
+C:\Users\Faieqah\OneDrive\Desktop\RegistrationForm\RegistrationForm\obj\Debug\PatientRegistration.csproj.GenerateResource.cache
+C:\Users\Faieqah\OneDrive\Desktop\RegistrationForm\RegistrationForm\obj\Debug\PatientRegistration.csproj.CoreCompileInputs.cache
+C:\Users\Faieqah\OneDrive\Desktop\RegistrationForm\RegistrationForm\obj\Debug\RegistrationForm.exe
+C:\Users\Faieqah\OneDrive\Desktop\RegistrationForm\RegistrationForm\obj\Debug\RegistrationForm.pdb
