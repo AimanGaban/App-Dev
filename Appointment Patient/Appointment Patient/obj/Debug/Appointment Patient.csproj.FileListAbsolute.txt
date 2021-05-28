@@ -1,0 +1,10 @@
+D:\Appointment Patient\Appointment Patient\bin\Debug\Appointment Patient.exe.config
+D:\Appointment Patient\Appointment Patient\bin\Debug\Appointment Patient.exe
+D:\Appointment Patient\Appointment Patient\bin\Debug\Appointment Patient.pdb
+D:\Appointment Patient\Appointment Patient\obj\Debug\Appointment Patient.csprojAssemblyReference.cache
+D:\Appointment Patient\Appointment Patient\obj\Debug\Appointment_Patient.Form1.resources
+D:\Appointment Patient\Appointment Patient\obj\Debug\Appointment_Patient.Properties.Resources.resources
+D:\Appointment Patient\Appointment Patient\obj\Debug\Appointment Patient.csproj.GenerateResource.cache
+D:\Appointment Patient\Appointment Patient\obj\Debug\Appointment Patient.csproj.CoreCompileInputs.cache
+D:\Appointment Patient\Appointment Patient\obj\Debug\Appointment Patient.exe
+D:\Appointment Patient\Appointment Patient\obj\Debug\Appointment Patient.pdb
