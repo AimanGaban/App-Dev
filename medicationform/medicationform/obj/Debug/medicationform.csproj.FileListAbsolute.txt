@@ -1,0 +1,11 @@
+C:\Users\user\Desktop\AD 1\Project Ad1\medicationform\medicationform\bin\Debug\medicationform.exe.config
+C:\Users\user\Desktop\AD 1\Project Ad1\medicationform\medicationform\bin\Debug\medicationform.exe
+C:\Users\user\Desktop\AD 1\Project Ad1\medicationform\medicationform\bin\Debug\medicationform.pdb
+C:\Users\user\Desktop\AD 1\Project Ad1\medicationform\medicationform\obj\Debug\medicationform.csprojAssemblyReference.cache
+C:\Users\user\Desktop\AD 1\Project Ad1\medicationform\medicationform\obj\Debug\medicationform.Form1.resources
+C:\Users\user\Desktop\AD 1\Project Ad1\medicationform\medicationform\obj\Debug\medicationform.Properties.Resources.resources
+C:\Users\user\Desktop\AD 1\Project Ad1\medicationform\medicationform\obj\Debug\medicationform.csproj.GenerateResource.cache
+C:\Users\user\Desktop\AD 1\Project Ad1\medicationform\medicationform\obj\Debug\medicationform.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\AD 1\Project Ad1\medicationform\medicationform\obj\Debug\medicationform.exe
+C:\Users\user\Desktop\AD 1\Project Ad1\medicationform\medicationform\obj\Debug\medicationform.pdb
+C:\Users\user\Desktop\AD 1\Project Ad1\medicationform\medicationform\obj\Debug\medicationform.Form2.resources
