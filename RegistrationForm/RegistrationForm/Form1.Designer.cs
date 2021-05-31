@@ -29,35 +29,40 @@ namespace RegistrationForm
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label10 = new System.Windows.Forms.Label();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnexit = new System.Windows.Forms.Button();
+            this.btndelete = new System.Windows.Forms.Button();
+            this.btnedit = new System.Windows.Forms.Button();
+            this.txtemail = new System.Windows.Forms.TextBox();
+            this.btnsave = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.txtcontact = new System.Windows.Forms.TextBox();
+            this.txtcitycode = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.rbfemale = new System.Windows.Forms.RadioButton();
+            this.rbmale = new System.Windows.Forms.RadioButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cmbstate = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtadd = new System.Windows.Forms.TextBox();
+            this.txtname = new System.Windows.Forms.TextBox();
+            this.txtnric = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -84,7 +89,7 @@ namespace RegistrationForm
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(48, 47);
+            this.label3.Location = new System.Drawing.Point(16, 86);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 17);
             this.label3.TabIndex = 2;
@@ -94,7 +99,7 @@ namespace RegistrationForm
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(79, 87);
+            this.label4.Location = new System.Drawing.Point(51, 46);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 17);
             this.label4.TabIndex = 3;
@@ -104,7 +109,7 @@ namespace RegistrationForm
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(83, 360);
+            this.label5.Location = new System.Drawing.Point(51, 317);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 17);
             this.label5.TabIndex = 4;
@@ -112,175 +117,238 @@ namespace RegistrationForm
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.textBox9);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.listView1);
+            this.groupBox1.Controls.Add(this.btnexit);
+            this.groupBox1.Controls.Add(this.btndelete);
+            this.groupBox1.Controls.Add(this.btnedit);
+            this.groupBox1.Controls.Add(this.txtemail);
+            this.groupBox1.Controls.Add(this.btnsave);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.txtcontact);
+            this.groupBox1.Controls.Add(this.txtcitycode);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.rbfemale);
+            this.groupBox1.Controls.Add(this.rbmale);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cmbstate);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtadd);
+            this.groupBox1.Controls.Add(this.txtname);
+            this.groupBox1.Controls.Add(this.txtnric);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Location = new System.Drawing.Point(30, 94);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(627, 474);
+            this.groupBox1.Size = new System.Drawing.Size(880, 557);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Patient Information";
             // 
-            // button3
+            // label10
             // 
-            this.button3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(526, 411);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(92, 36);
-            this.button3.TabIndex = 27;
-            this.button3.Text = "CLEAR";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial Narrow", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(246, 205);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(105, 16);
+            this.label10.TabIndex = 31;
+            this.label10.Text = "e.g. 81300 Johor Bahru";
             // 
-            // button2
+            // listView1
             // 
-            this.button2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(428, 411);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 36);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "EDIT";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7,
+            this.columnHeader8});
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(19, 393);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(844, 110);
+            this.listView1.TabIndex = 30;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseClick);
             // 
-            // textBox9
+            // columnHeader1
             // 
-            this.textBox9.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.ForeColor = System.Drawing.Color.Silver;
-            this.textBox9.Location = new System.Drawing.Point(145, 357);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(238, 25);
-            this.textBox9.TabIndex = 25;
-            this.textBox9.Text = "name@example.com";
-            this.textBox9.Enter += new System.EventHandler(this.textBox9_Enter);
-            this.textBox9.Leave += new System.EventHandler(this.textBox9_Leave);
+            this.columnHeader1.Text = "NRIC";
+            this.columnHeader1.Width = 90;
             // 
-            // button1
+            // columnHeader2
             // 
-            this.button1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(331, 411);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 36);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "SAVE";
-            this.button1.UseVisualStyleBackColor = true;
+            this.columnHeader2.Text = "Name";
+            this.columnHeader2.Width = 150;
             // 
-            // textBox8
+            // columnHeader3
             // 
-            this.textBox8.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(145, 284);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(238, 25);
-            this.textBox8.TabIndex = 18;
+            this.columnHeader3.Text = "Address";
+            this.columnHeader3.Width = 200;
             // 
-            // textBox7
+            // columnHeader4
             // 
-            this.textBox7.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.ForeColor = System.Drawing.Color.Silver;
-            this.textBox7.Location = new System.Drawing.Point(355, 217);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(166, 25);
-            this.textBox7.TabIndex = 17;
-            this.textBox7.Text = "Postal Code";
-            this.textBox7.Enter += new System.EventHandler(this.textBox7_Enter);
-            this.textBox7.Leave += new System.EventHandler(this.textBox7_Leave);
+            this.columnHeader4.Text = "Postcode City";
+            this.columnHeader4.Width = 70;
             // 
-            // textBox6
+            // columnHeader5
             // 
-            this.textBox6.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.Silver;
-            this.textBox6.Location = new System.Drawing.Point(145, 217);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(166, 25);
-            this.textBox6.TabIndex = 16;
-            this.textBox6.Text = "City";
-            this.textBox6.Enter += new System.EventHandler(this.textBox6_Enter);
-            this.textBox6.Leave += new System.EventHandler(this.textBox6_Leave);
+            this.columnHeader5.Text = "State";
+            this.columnHeader5.Width = 80;
             // 
-            // textBox5
+            // columnHeader6
             // 
-            this.textBox5.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(145, 186);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(376, 25);
-            this.textBox5.TabIndex = 15;
+            this.columnHeader6.Text = "Contact No.";
+            this.columnHeader6.Width = 90;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Gender";
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Email";
+            this.columnHeader8.Width = 100;
+            // 
+            // btnexit
+            // 
+            this.btnexit.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexit.Location = new System.Drawing.Point(798, 515);
+            this.btnexit.Name = "btnexit";
+            this.btnexit.Size = new System.Drawing.Size(65, 36);
+            this.btnexit.TabIndex = 29;
+            this.btnexit.Text = "EXIT";
+            this.btnexit.UseVisualStyleBackColor = true;
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
+            // 
+            // btndelete
+            // 
+            this.btndelete.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndelete.Location = new System.Drawing.Point(771, 339);
+            this.btndelete.Name = "btndelete";
+            this.btndelete.Size = new System.Drawing.Size(92, 36);
+            this.btndelete.TabIndex = 27;
+            this.btndelete.Text = "DELETE";
+            this.btndelete.UseVisualStyleBackColor = true;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
+            // 
+            // btnedit
+            // 
+            this.btnedit.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnedit.Location = new System.Drawing.Point(644, 339);
+            this.btnedit.Name = "btnedit";
+            this.btnedit.Size = new System.Drawing.Size(92, 36);
+            this.btnedit.TabIndex = 24;
+            this.btnedit.Text = "EDIT";
+            this.btnedit.UseVisualStyleBackColor = true;
+            this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
+            // 
+            // txtemail
+            // 
+            this.txtemail.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtemail.ForeColor = System.Drawing.Color.Silver;
+            this.txtemail.Location = new System.Drawing.Point(113, 314);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(238, 25);
+            this.txtemail.TabIndex = 25;
+            this.txtemail.Text = "someone@example.com";
+            this.txtemail.Enter += new System.EventHandler(this.txtemail_Enter);
+            this.txtemail.Leave += new System.EventHandler(this.txtemail_Leave);
+            // 
+            // btnsave
+            // 
+            this.btnsave.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsave.Location = new System.Drawing.Point(546, 339);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(92, 36);
+            this.btnsave.TabIndex = 23;
+            this.btnsave.Text = "SAVE";
+            this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial Narrow", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(264, 46);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(87, 16);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "e.g. 920301148912";
+            // 
+            // txtcontact
+            // 
+            this.txtcontact.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcontact.Location = new System.Drawing.Point(113, 241);
+            this.txtcontact.Name = "txtcontact";
+            this.txtcontact.Size = new System.Drawing.Size(137, 25);
+            this.txtcontact.TabIndex = 18;
+            // 
+            // txtcitycode
+            // 
+            this.txtcitycode.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcitycode.ForeColor = System.Drawing.Color.Silver;
+            this.txtcitycode.Location = new System.Drawing.Point(113, 201);
+            this.txtcitycode.Name = "txtcitycode";
+            this.txtcitycode.Size = new System.Drawing.Size(127, 25);
+            this.txtcitycode.TabIndex = 17;
+            this.txtcitycode.Text = "Postcode City";
+            this.txtcitycode.Enter += new System.EventHandler(this.txtcitycode_Enter);
+            this.txtcitycode.Leave += new System.EventHandler(this.txtcitycode_Leave);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(66, 125);
+            this.label8.Location = new System.Drawing.Point(34, 124);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(62, 17);
             this.label8.TabIndex = 14;
             this.label8.Text = "Address";
             // 
-            // radioButton2
+            // rbfemale
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(236, 324);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(75, 21);
-            this.radioButton2.TabIndex = 13;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Female";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbfemale.AutoSize = true;
+            this.rbfemale.Location = new System.Drawing.Point(204, 281);
+            this.rbfemale.Name = "rbfemale";
+            this.rbfemale.Size = new System.Drawing.Size(75, 21);
+            this.rbfemale.TabIndex = 13;
+            this.rbfemale.TabStop = true;
+            this.rbfemale.Text = "Female";
+            this.rbfemale.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbmale
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(160, 324);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(59, 21);
-            this.radioButton1.TabIndex = 12;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(145, 155);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(376, 25);
-            this.textBox4.TabIndex = 11;
+            this.rbmale.AutoSize = true;
+            this.rbmale.Location = new System.Drawing.Point(128, 281);
+            this.rbmale.Name = "rbmale";
+            this.rbmale.Size = new System.Drawing.Size(59, 21);
+            this.rbmale.TabIndex = 12;
+            this.rbmale.TabStop = true;
+            this.rbmale.Text = "Male";
+            this.rbmale.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(43, 287);
+            this.label7.Location = new System.Drawing.Point(11, 244);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(85, 17);
             this.label7.TabIndex = 10;
             this.label7.Text = "Contact No.";
             // 
-            // comboBox1
+            // cmbstate
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.Color.Silver;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbstate.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbstate.ForeColor = System.Drawing.Color.Silver;
+            this.cmbstate.FormattingEnabled = true;
+            this.cmbstate.Items.AddRange(new object[] {
             "Johor ",
             "Kedah",
             "Kelantan",
@@ -295,78 +363,63 @@ namespace RegistrationForm
             "Sabah",
             "Sarawak",
             "Wilayah Persekutuan"});
-            this.comboBox1.Location = new System.Drawing.Point(145, 248);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 25);
-            this.comboBox1.TabIndex = 9;
-            this.comboBox1.Text = "State";
-            this.comboBox1.Enter += new System.EventHandler(this.comboBox1_Enter);
-            this.comboBox1.Leave += new System.EventHandler(this.comboBox1_Leave);
+            this.cmbstate.Location = new System.Drawing.Point(380, 201);
+            this.cmbstate.Name = "cmbstate";
+            this.cmbstate.Size = new System.Drawing.Size(133, 25);
+            this.cmbstate.TabIndex = 9;
+            this.cmbstate.Text = "State";
+            this.cmbstate.Enter += new System.EventHandler(this.cmbstate_Enter);
+            this.cmbstate.Leave += new System.EventHandler(this.cmbstate_Leave);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(72, 324);
+            this.label6.Location = new System.Drawing.Point(40, 281);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(56, 17);
             this.label6.TabIndex = 8;
             this.label6.Text = "Gender";
             // 
-            // textBox3
+            // txtadd
             // 
-            this.textBox3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(145, 122);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(376, 25);
-            this.textBox3.TabIndex = 7;
+            this.txtadd.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtadd.Location = new System.Drawing.Point(113, 121);
+            this.txtadd.Multiline = true;
+            this.txtadd.Name = "txtadd";
+            this.txtadd.Size = new System.Drawing.Size(400, 74);
+            this.txtadd.TabIndex = 7;
             // 
-            // textBox2
+            // txtname
             // 
-            this.textBox2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(145, 84);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(263, 25);
-            this.textBox2.TabIndex = 6;
-            this.textBox2.VisibleChanged += new System.EventHandler(this.button1_Click);
+            this.txtname.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtname.Location = new System.Drawing.Point(113, 83);
+            this.txtname.Name = "txtname";
+            this.txtname.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtname.Size = new System.Drawing.Size(400, 25);
+            this.txtname.TabIndex = 6;
             // 
-            // textBox1
+            // txtnric
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(145, 44);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(428, 25);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.VisibleChanged += new System.EventHandler(this.button1_Click);
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial Narrow", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(414, 88);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(101, 16);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "e.g. 920301148912";
+            this.txtnric.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnric.Location = new System.Drawing.Point(113, 43);
+            this.txtnric.Name = "txtnric";
+            this.txtnric.Size = new System.Drawing.Size(137, 25);
+            this.txtnric.TabIndex = 5;
             // 
             // PatientRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 600);
+            this.ClientSize = new System.Drawing.Size(937, 663);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "PatientRegistration";
-            this.Text = "Clinic Patient Registration Form";
+            this.Text = "Klinik Mangga Aesthetic Patient Registration Form";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -380,26 +433,33 @@ namespace RegistrationForm
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.RadioButton rbfemale;
+        private System.Windows.Forms.RadioButton rbmale;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbstate;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.TextBox txtadd;
+        private System.Windows.Forms.TextBox txtname;
+        private System.Windows.Forms.TextBox txtnric;
+        private System.Windows.Forms.TextBox txtcontact;
+        private System.Windows.Forms.TextBox txtcitycode;
+        private System.Windows.Forms.Button btnedit;
+        private System.Windows.Forms.Button btnsave;
+        private System.Windows.Forms.TextBox txtemail;
+        private System.Windows.Forms.Button btndelete;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnexit;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
     }
 }
 

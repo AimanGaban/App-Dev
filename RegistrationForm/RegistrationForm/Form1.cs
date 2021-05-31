@@ -16,154 +16,219 @@ namespace RegistrationForm
         public PatientRegistration()
         {
             InitializeComponent();
-            radioButton1.CheckedChanged += new EventHandler(radioButton_CheckedChanged);
-            radioButton2.CheckedChanged += new EventHandler(radioButton_CheckedChanged);
+
+            //set ListView properties
+            listView1.View = View.Details;
+            
+            //construct columns
+            listView1.Columns.Add("NRIC", 90);
+            listView1.Columns.Add("Name", 150);
+            listView1.Columns.Add("Address", 200);
+            listView1.Columns.Add("Postcode City", 70);
+            listView1.Columns.Add("State", 80);
+            listView1.Columns.Add("Contact No.", 90);
+            listView1.Columns.Add("Gender", 60);
+            listView1.Columns.Add("Email", 100);
+
         }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             this.Text = "Patient Registration Application Form";
-            this.Location = new Point(500, 200);
+            this.Location = new Point(450, 200);
             this.MaximizeBox = false;
             MessageBox.Show("Note: You may required to fill out this registration form",
-            "Mangga Aesthetic Clinic Info",
+            "Klinik Mangga Aesthetic Info",
             MessageBoxButtons.OK,
             MessageBoxIcon.Information);
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
 
-            string fullname, address1, address2, address3, city, gender, email;
-            double nric, postcode, contact;
-            gender = null;
-            fullname = textBox1.Text;
-            nric = double.Parse(textBox2.Text);
-            
-            address1 = textBox3.Text;
-            address2 = textBox4.Text;
-            address3 = textBox5.Text;
-            city = textBox6.Text;
-            postcode = double.Parse(textBox7.Text);
-            string state = this.comboBox1.GetItemText(this.comboBox1.SelectedItem);
-            contact = double.Parse(textBox8.Text);
-            email = textBox9.Text;
-
-            if(radioButton1.Checked == true)
-            {
-                gender = radioButton1.Text;
-            }
-            else if(radioButton2.Checked == true)
-            {
-                gender = radioButton2.Text;
-            }
-                
-            MessageBox.Show("New Patient Registered!" +
-                "\n\nFull Name : " + fullname +
-                "\nNRIC : " + nric.ToString() +
-                "\nAddress : " + address1 + "\n\t " + address2 + "\n\t " + address3 +
-                "\n\t " + city + " " + postcode.ToString() + ", " + state +
-                "\nContact No. : " + contact.ToString() +
-                "\nGender : " + gender +
-                "\nEmail : " + email);
+            cmbstate.Items.Add("Johor");
+            cmbstate.Items.Add("Kedah");
+            cmbstate.Items.Add("Kelantan");
+            cmbstate.Items.Add("Melaka");
+            cmbstate.Items.Add("Negeri Sembilan");
+            cmbstate.Items.Add("Pahang");
+            cmbstate.Items.Add("Pulau Pinang");
+            cmbstate.Items.Add("Perak");
+            cmbstate.Items.Add("Perlis");
+            cmbstate.Items.Add("Selangor");
+            cmbstate.Items.Add("Terengganu");
+            cmbstate.Items.Add("Sabah");
+            cmbstate.Items.Add("Sarawak");
+            cmbstate.Items.Add("Wilayah Persekutuan");
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        //add row
+        private void save(String nric, String name, String add, String postcode, 
+            String state, String contact, String gender, String email)
         {
-            MessageBox.Show("Edit information",
-            "Mangga Aesthetic Clinic Info",
+            //array to rep a row
+            String[] row = { nric, name, add, postcode, state, contact, gender, email };
+
+            ListViewItem item = new ListViewItem(row);
+
+            //add to ListView
+            listView1.Items.Add(item);
+        }
+
+        //getGender selected item
+        private String getGender()
+        {
+            if(rbmale.Checked)
+            {
+                return "Male";
+            }
+            else if(rbfemale.Checked)
+            {
+                return "Female";
+            }
+            return "None";
+        }
+        
+        private void btnsave_Click(object sender, EventArgs e)
+        {
+            save(txtnric.Text, txtname.Text, txtadd.Text, txtcitycode.Text, 
+                cmbstate.SelectedItem.ToString(), txtcontact.Text, getGender(), txtemail.Text);
+            //clear txt
+            txtnric.Text = "";
+            txtname.Text = "";
+            txtadd.Text = "";
+            txtcitycode.Text = "";
+            cmbstate.SelectedItem = "";
+            txtcontact.Text = "";
+            txtemail.Text = "";
+        }
+        
+        //edit or update
+        private void edit()
+        {
+            listView1.SelectedItems[0].SubItems[0].Text = txtnric.Text;
+            listView1.SelectedItems[0].SubItems[1].Text = txtname.Text;
+            listView1.SelectedItems[0].SubItems[2].Text = txtadd.Text;
+            listView1.SelectedItems[0].SubItems[3].Text = txtcitycode.Text;
+            listView1.SelectedItems[0].SubItems[4].Text = cmbstate.Text;
+            listView1.SelectedItems[0].SubItems[5].Text = txtcontact.Text;
+            listView1.SelectedItems[0].SubItems[4].Text = rbmale.Text;
+            listView1.SelectedItems[0].SubItems[6].Text = txtemail.Text;
+
+            //clear txt
+            txtnric.Text = "";
+            txtname.Text = "";
+            txtadd.Text = "";
+            txtcitycode.Text = "";
+            cmbstate.SelectedItem = "";
+            txtcontact.Text = "";
+            txtemail.Text = "";
+        }
+        private void btnedit_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Edit/ Update information",
+            "Klinik Mangga Aesthetic Info",
             MessageBoxButtons.OK,
             MessageBoxIcon.Information);
-        }
-        private void button3_Click(object sender, EventArgs e)
-        {
-            textBox1.Clear();
-            textBox2.Clear();
-            textBox3.Clear();
-            textBox4.Clear();
-            textBox5.Clear();
-            textBox6.Clear();
-            textBox7.Clear();
-            textBox8.Clear();
-            textBox9.Clear();
-            comboBox1.Items.Clear();
-            radioButton1.Checked = false;
-            radioButton2.Checked = false;
-        }
-        void radioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            RadioButton rb = (RadioButton)sender;
-            if (rb.Checked)
-                MessageBox.Show("Confirm");
+
+            edit();
         }
 
-        private void textBox6_Enter(object sender, EventArgs e)
+        //delete
+        private void delete()
         {
-            if(textBox6.Text == "City")
+            if (MessageBox.Show("Are you sure?", "Delete Confirmation", MessageBoxButtons.OKCancel, 
+                MessageBoxIcon.Warning) == DialogResult.OK)
             {
-                textBox6.Text = "";
-                textBox6.ForeColor = Color.Black;
-            }
-        }
-        private void textBox6_Leave(object sender, EventArgs e)
-        {
+                listView1.Items.RemoveAt(listView1.SelectedIndices[0]);
 
-            if (textBox6.Text == "")
-            {
-                textBox6.Text = "City";
-                textBox6.ForeColor = Color.Silver;
+                //clear txt
+                txtnric.Text = "";
+                txtname.Text = "";
+                txtadd.Text = "";
+                txtcitycode.Text = "";
+                cmbstate.SelectedItem = "";
+                txtcontact.Text = "";
+                txtemail.Text = "";
             }
         }
 
-        private void textBox7_Enter(object sender, EventArgs e)
+        private void btndelete_Click(object sender, EventArgs e)
         {
-            if (textBox7.Text == "Postal Code")
+            delete();
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            DialogResult Exit;
+            Exit = MessageBox.Show("Confirm if you want to leave the page", "Close page", 
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (Exit == DialogResult.Yes)
             {
-                textBox7.Text = "";
-                textBox7.ForeColor = Color.Black;
+                Application.Exit();
             }
         }
 
-        private void textBox7_Leave(object sender, EventArgs e)
+        private void listView1_MouseClick(object sender, MouseEventArgs e)
         {
-            if (textBox7.Text == "")
+            txtnric.Text = listView1.SelectedItems[0].SubItems[0].Text;
+            txtname.Text = listView1.SelectedItems[0].SubItems[1].Text;
+            txtadd.Text = listView1.SelectedItems[0].SubItems[2].Text;
+            txtcitycode.Text = listView1.SelectedItems[0].SubItems[3].Text;
+            cmbstate.Text = listView1.SelectedItems[0].SubItems[4].Text;
+            txtcontact.Text = listView1.SelectedItems[0].SubItems[5].Text;
+            rbmale.Text = listView1.SelectedItems[0].SubItems[6].Text;
+            txtemail.Text = listView1.SelectedItems[0].SubItems[7].Text;
+        }
+
+        private void txtcitycode_Enter(object sender, EventArgs e)
+        {
+            if (txtcitycode.Text == "Postcode City")
             {
-                textBox7.Text = "Postal Code";
-                textBox7.ForeColor = Color.Silver;
+                txtcitycode.Text = "";
+                txtcitycode.ForeColor = Color.Black;
             }
         }
-        private void textBox9_Enter(object sender, EventArgs e)
+        private void txtcitycode_Leave(object sender, EventArgs e)
         {
-            if (textBox9.Text == "name@example.com")
+            if (txtcitycode.Text == "")
             {
-                textBox9.Text = "";
-                textBox9.ForeColor = Color.Black;
+                txtcitycode.Text = "Postcode City";
+                txtcitycode.ForeColor = Color.Silver;
             }
         }
 
-        private void textBox9_Leave(object sender, EventArgs e)
+
+        private void cmbstate_Enter(object sender, EventArgs e)
         {
-            if (textBox9.Text == "")
+            if (cmbstate.Text == "State")
             {
-                textBox9.Text = "name@example.com";
-                textBox9.ForeColor = Color.Silver;
+                cmbstate.Text = "";
+                cmbstate.ForeColor = Color.Black;
             }
         }
 
-        private void comboBox1_Enter(object sender, EventArgs e)
+        private void cmbstate_Leave(object sender, EventArgs e)
         {
-            if (comboBox1.Text == "State")
+            if (cmbstate.Text == "")
             {
-                comboBox1.Text = "";
-                comboBox1.ForeColor = Color.Black;
+                cmbstate.Text = "State";
+                cmbstate.ForeColor = Color.Silver;
             }
         }
 
-        private void comboBox1_Leave(object sender, EventArgs e)
+        private void txtemail_Enter(object sender, EventArgs e)
         {
-            if (comboBox1.Text == "")
+            if (txtemail.Text == "someone@example.com")
             {
-                comboBox1.Text = "State";
-                comboBox1.ForeColor = Color.Silver;
+                txtemail.Text = "";
+                txtemail.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtemail_Leave(object sender, EventArgs e)
+        {
+            if (txtemail.Text == "")
+            {
+                txtemail.Text = "someone@example.com";
+                txtemail.ForeColor = Color.Silver;
             }
         }
     }
