@@ -190,6 +190,15 @@ namespace medicationform
                 comboBox1.Items.Add("Dermabrasion");
 
             }
+             private void button4_Click(object sender, EventArgs e)
+             {
+            textBox1.Clear();
+            textBox2.Clear();
+            listView1.Items.Clear();
+            textBox3.Clear();
+            textBox5.Clear();
+        
+            }
         }
     }
 }
