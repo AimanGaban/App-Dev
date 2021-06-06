@@ -10,3 +10,8 @@ C:\Users\asus\Desktop\University\App Dev\Week 13 (PROJECT)\Klinik Mangga Managem
 C:\Users\asus\Desktop\University\App Dev\Week 13 (PROJECT)\Klinik Mangga Management Form\obj\Debug\Klinik Mangga Management Form.exe
 C:\Users\asus\Desktop\University\App Dev\Week 13 (PROJECT)\Klinik Mangga Management Form\obj\Debug\Klinik Mangga Management Form.pdb
 C:\Users\asus\Desktop\University\App Dev\Week 13 (PROJECT)\Klinik Mangga Management Form\obj\Debug\Klinik_Mangga_Management_Form.Billing_Form.resources
+C:\Users\asus\Desktop\University\App Dev\Week 13 (PROJECT)\Klinik Mangga Management Form\obj\Debug\Klinik_Mangga_Management_Form.Appointment_Form.resources
+C:\Users\asus\Desktop\University\App Dev\Week 13 (PROJECT)\Klinik Mangga Management Form\obj\Debug\Klinik_Mangga_Management_Form.ClientDetailsForm.resources
+C:\Users\asus\Desktop\University\App Dev\Week 13 (PROJECT)\Klinik Mangga Management Form\obj\Debug\Klinik_Mangga_Management_Form.Medication_Form.resources
+C:\Users\asus\Desktop\University\App Dev\Week 13 (PROJECT)\Klinik Mangga Management Form\obj\Debug\Klinik_Mangga_Management_Form.Inventory_Form.resources
+C:\Users\asus\Desktop\University\App Dev\Week 13 (PROJECT)\Klinik Mangga Management Form\obj\Debug\Klinik_Mangga_Management_Form.PatientRegistration.resources

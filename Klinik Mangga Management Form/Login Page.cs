@@ -16,23 +16,33 @@ namespace Klinik_Mangga_Management_Form
         {
             InitializeComponent();
         }
-
+        //To activating the button's function and enable to enter user's input
         private void EnterButton_Click(object sender, EventArgs e)
         {
+            //Setting the password
             String user = "Admin", password = "123456";
+            //Creating a conditional for entered details, if same, it will allow access
             if ((IDBox.Text == user) && (PasswordBox.Text == password))
             {
-                MessageBox.Show("ID & Password is correct", "Not noice");
+                MessageBox.Show("You have entered the correct password", "Welcome");
                 this.Hide();
                 Main_Page MP = new Main_Page();
                 MP.ShowDialog();
             }
+            //If the user entered the wrong password
             else
             {
-                MessageBox.Show("ID & Password is incorrect", "Not noice");
+                MessageBox.Show("Please re-enter the correct detail", "Wrong ID or Password");
             }
         }
-
+        //Showing correct details for user (Will be deleted for future usage)
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MessageBox.Show("ID: Admin\nPassword: 123456", "ID & Password");
+        }
+        /* Close application. To close the application, we are using Exit instead of Close
+         * because it's more specific and will end the application in background.
+         */
         private void ExitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();

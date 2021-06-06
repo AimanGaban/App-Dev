@@ -44,6 +44,7 @@ namespace Klinik_Mangga_Management_Form
             this.MedicationButton = new System.Windows.Forms.Button();
             this.BillingButton = new System.Windows.Forms.Button();
             this.LogoutButton = new System.Windows.Forms.Button();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -86,7 +87,7 @@ namespace Klinik_Mangga_Management_Form
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(11, 264);
+            this.pictureBox4.Location = new System.Drawing.Point(11, 295);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(175, 175);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -96,7 +97,7 @@ namespace Klinik_Mangga_Management_Form
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(219, 264);
+            this.pictureBox5.Location = new System.Drawing.Point(219, 295);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(175, 175);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -106,7 +107,7 @@ namespace Klinik_Mangga_Management_Form
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(426, 264);
+            this.pictureBox6.Location = new System.Drawing.Point(426, 295);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(175, 175);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -116,7 +117,8 @@ namespace Klinik_Mangga_Management_Form
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.AboutToolStripMenuItem});
+            this.AboutToolStripMenuItem,
+            this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(616, 24);
@@ -166,7 +168,7 @@ namespace Klinik_Mangga_Management_Form
             // MedicationButton
             // 
             this.MedicationButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MedicationButton.Location = new System.Drawing.Point(11, 445);
+            this.MedicationButton.Location = new System.Drawing.Point(11, 476);
             this.MedicationButton.Name = "MedicationButton";
             this.MedicationButton.Size = new System.Drawing.Size(175, 25);
             this.MedicationButton.TabIndex = 10;
@@ -177,7 +179,7 @@ namespace Klinik_Mangga_Management_Form
             // BillingButton
             // 
             this.BillingButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BillingButton.Location = new System.Drawing.Point(219, 445);
+            this.BillingButton.Location = new System.Drawing.Point(219, 476);
             this.BillingButton.Name = "BillingButton";
             this.BillingButton.Size = new System.Drawing.Size(175, 25);
             this.BillingButton.TabIndex = 11;
@@ -188,7 +190,7 @@ namespace Klinik_Mangga_Management_Form
             // LogoutButton
             // 
             this.LogoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogoutButton.Location = new System.Drawing.Point(426, 445);
+            this.LogoutButton.Location = new System.Drawing.Point(426, 476);
             this.LogoutButton.Name = "LogoutButton";
             this.LogoutButton.Size = new System.Drawing.Size(175, 25);
             this.LogoutButton.TabIndex = 12;
@@ -196,11 +198,18 @@ namespace Klinik_Mangga_Management_Form
             this.LogoutButton.UseVisualStyleBackColor = true;
             this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // Main_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(616, 484);
+            this.ClientSize = new System.Drawing.Size(616, 516);
             this.Controls.Add(this.LogoutButton);
             this.Controls.Add(this.BillingButton);
             this.Controls.Add(this.MedicationButton);
@@ -246,5 +255,6 @@ namespace Klinik_Mangga_Management_Form
         private System.Windows.Forms.Button BillingButton;
         private System.Windows.Forms.Button LogoutButton;
         private System.Windows.Forms.ToolStripMenuItem AboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }

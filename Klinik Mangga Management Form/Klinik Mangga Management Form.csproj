@@ -52,6 +52,37 @@
     <Compile Include="Billing Form.Designer.cs">
       <DependentUpon>Billing Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Appointment Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointment Form.designer.cs">
+      <DependentUpon>Appointment Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataText.cs" />
+    <Compile Include="Details Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Details Form.designer.cs">
+      <DependentUpon>Details Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration Page.designer.cs">
+      <DependentUpon>Registration Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medication Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medication Form.designer.cs">
+      <DependentUpon>Medication Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory Form.designer.cs">
+      <DependentUpon>Inventory Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +100,21 @@
     <EmbeddedResource Include="Billing Form.resx">
       <DependentUpon>Billing Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Appointment Form.resx">
+      <DependentUpon>Appointment Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Details Form.resx">
+      <DependentUpon>Details Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration Page.resx">
+      <DependentUpon>Registration Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medication Form.resx">
+      <DependentUpon>Medication Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory Form.resx">
+      <DependentUpon>Inventory Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main Page.resx">
       <DependentUpon>Main Page.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,6 +130,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include=".editorconfig" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
